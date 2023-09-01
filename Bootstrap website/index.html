@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daycare application</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+    <body>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Owner's First and Last Name</label>
+                <input type="name" class="form-control" id="name">            
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone">            
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">            
+            </div>
+            <div class="mb-3">
+                <label for="petname" class="form-label">Pet's Name</label>
+                <input type="text" class="form-control" id="petname">            
+            </div>
+            <div class="mb-3">
+                <div class="form-check-inline">
+                    
+                    <input class="form-check-input" type="radio" name="gender" id="male">
+                    <label class="form-check-label" for="male">
+                    Male
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" checked>
+                    <label class="form-check-label" for="female">
+                    Female
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Nutered / spayed
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="shots">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Shots up to date
+                </label>
+              </div>
+            </div>
+            <div class="mb-3">
+                <label for="breed" class="form-label">Breed</label>
+                <input type="text" class="form-control" id="breed">            
+            </div>
+            <div class="mb-3">
+                <label for="energy-level" class="form-label">Energy Level</label>
+                <select class="form-select">
+                <option selected>Select Energy Level</option>
+                <option value="couch-potato">Couch Potato</option>
+                <option value="mild">Mild Exerciser</option>
+                <option value="moderate">Moderate Exerciser</option>
+                <option value="athlete">Athlete</option>
+              </select>
+            </div>
+            <div class="mb-3">
+            <label for="socialization-level" class="form-label">Socialization Level</label>
+            <select class="form-select">
+                <option selected>Select Socialization Level</option>
+                <option value="none">None-no interaction with other dogs</option>
+                <option value="minimal">Minimal-on leash/at home encounters only</option>
+                <option value="moderate">Moderate-off leash play/supervised play</option>
+                <option value="extensive">Extensive-off leash dog parks, dog daycares, public settings</option>
+              </select>
+            </div>
+            <div class="mb-3">
+                <label for="trip-start" class="form-label">Start date:</label>
+                <input class="form-control" type="datetime-local" id="trip-start" name="trip-start"/>
+            </div>
+            <div class="mb-3">
+                <label for="trip-end" class="form-label">End date:</label>
+                <input class="form-control" type="datetime-local" id="trip-end" name="trip-end"/>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="mon" value="mon">
+                <label class="form-check-label" for="mon">M</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="tues" value="tues">
+                <label class="form-check-label" for="tues">T</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="wed" value="wed">
+                <label class="form-check-label" for="wed">W</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="thurs" value="thurs">
+                <label class="form-check-label" for="thurs">TH</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="fri" value="fri">
+                <label class="form-check-label" for="fri">F</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="sat" value="sat">
+                <label class="form-check-label" for="sat">S</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="sun" value="sun">
+                <label class="form-check-label" for="sun">SU</label>
+              </div>
+
+
+
+
+              
+            <div class="mb-3">
+                <label for="start" class="form-label">Start</label>
+                <input class="form-control" type="time" id="start-weekly" name="start-weekly"/>
+            </div>
+            <div class="mb-3">
+                <label for="end" class="form-label">End</label>
+                <input class="form-control" type="time" id="end-weekly" name="end-weekly"/>
+            </div>
+            <div class="mb-3">
+              <label for="how-did-you-find-us" placeholder="Leave a comment here" class="form-label">How did you hear about us?</label>
+              <textarea class="form-control" id="how-did-you-find-us"></textarea>            
+            </div>
+
+            
+            
+            
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+    </body>
+</html>
